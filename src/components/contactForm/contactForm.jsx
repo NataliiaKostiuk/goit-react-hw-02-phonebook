@@ -1,6 +1,6 @@
 import { Formik, Field, Form ,ErrorMessage} from 'formik';
 import * as Yup from 'yup';
-import { Label, Btn, Title } from './contact-form.styled';
+import { Label, Btn, Title } from './contactForm.styled';
 
 
 const formSchema = Yup.object().shape({

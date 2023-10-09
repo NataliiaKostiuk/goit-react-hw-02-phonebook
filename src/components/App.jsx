@@ -1,7 +1,7 @@
 import { Component } from 'react';
-import { ContactForm } from './contact-form/contact-form';
+import { ContactForm } from './contactForm/contactForm';
 import { Filter } from './filter/filter';
-import { ContactList } from './contact-list/contact-list';
+import { ContactList } from './contactList/contactList';
 import data from '../../src/data.json/data.json';
 import { nanoid } from 'nanoid';
 import{Container,MainTitle,Title} from './app.styled/app.styled'
@@ -25,8 +25,8 @@ export class App extends Component {
     }));
   };
 
-  onFilter =(evt) => {
-    this.setState({ filter: evt.target.value });
+  onFilter = value => {
+    this.setState({ filter: value });
   };
   render() {
     const filterNormilized = this.state.filter.toLowerCase().trim();

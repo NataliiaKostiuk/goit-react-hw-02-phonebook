@@ -1,4 +1,4 @@
-import { List,ListItem, Btn ,Div} from './contact-list.styled';
+import { List,ListItem, Btn ,Div} from './contactList.styled';
 import { nanoid } from 'nanoid';
 export const ContactList = ({contacts,onDelete}) => {
     return (

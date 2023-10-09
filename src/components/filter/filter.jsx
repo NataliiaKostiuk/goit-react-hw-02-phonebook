@@ -5,7 +5,7 @@ export const Filter = ({value,onFilter}) => {
         <Label><Div>Find contacts by names</Div>
             <input type="text" name="filter"                
         value={value}
-        onChange={onFilter}
+        onChange={(evt)=>onFilter(evt.target.value)}
         ></input>
         </Label>
     )
